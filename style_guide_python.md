@@ -1,17 +1,15 @@
 # Code and Documentation Style Guide
 
 ## Introduction
-
 This document serves as a style guide and template for writing code and generating documentation for personal projects. It ensures that the codebase is maintainable, readable, and facilitates automated documentation generation.
 
 ## Code Structure
 
 ### Header Comments
-
 - Every file must have a header with the following information:
   - Title: The name of the script.
   - Description: A brief summary of what the script does.
-  - Author: The name of the developer.
+  - Author: The name of the developer. (Always Neal Wallace)
   - Date Created: When the script was initially created (format: YYYY-MM-DD).
   - Version: The current version of the script.
 
@@ -21,7 +19,7 @@ Example:
 """
 Title: Data Processor
 Description: This script processes data from CSV files and generates reports.
-Author: [Your Name]
+Author: Neal Wallace
 Date Created: 2023-11-05
 Version: 1.0.0
 """
@@ -56,12 +54,13 @@ def calculate_statistics(data):
 
 ### Inline Comments
 
-- Use inline comments to explain complex or non-obvious code constructs.
+- Use inline comments on a separate line to explain complex or non-obvious code constructs.
 
 Example:
 
 ```python
-x += 1  # Compensate for the index starting at 0
+# Compensate for the index starting at 0
+x += 1  
 ```
 
 ## Logical Tags for Documentation
@@ -69,6 +68,8 @@ x += 1  # Compensate for the index starting at 0
 - Specific tags should be used for automated documentation extraction:
   - `@description`: Describes what the function or class does.
   - `@param`: Details about the parameters.
+  - `@variables`: Details about variables used.
+  - `@constants`: Details abour constants used
   - `@return`: Information about the return values.
   - `@raise`: Exceptions that may be raised.
 
@@ -100,4 +101,4 @@ For a full guide on PEP 8, refer to the [PEP 8 documentation](https://www.python
 
 | Version | Date       | Author       | Changes Made                       |
 |---------|------------|--------------|------------------------------------|
-| 0.0.1   | 2023-11-05 | [Your Name] | Initial creation of the style guide. |
+| 0.0.1   | 2023-11-05 | Neal Wallace | Initial creation of the style guide. |
